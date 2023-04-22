@@ -4,9 +4,9 @@ const port = process.env.PORT || 3000;
 
 app.use('/', require('./routes'))
 
-// above code is referencing this code in index.js
-// const rountes = require('express').Router();
-// rountes.get('/', (reg, res, next) =>{
+// code is referencing this code in index.js
+// const routes = require('express').Router();
+// routes.get('/', (reg, res, next) =>{
 //     reg.json('Awesome person');
 // });
 
