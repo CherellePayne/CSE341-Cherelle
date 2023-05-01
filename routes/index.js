@@ -1,10 +1,14 @@
-const routes = require('express').Router();
+//Week1 Routes
+// const routes = require('express').Router();
 
-routes.get('/', (req, res) => {
-  res.send('Ken Payne');
-});
+// routes.get('/', (req, res) => {
+//   res.send('Ken Payne');
+// });
 
-//From video
+// module.exports = routes;
+
+
+//From video week 1
 // const { awesomeFunction, returnAnotherPerson } = require('../controllers');
 
 // const routes = require('express').Router();
@@ -14,7 +18,13 @@ routes.get('/', (req, res) => {
 // routes.get('/', myController, awesomeFunction);
 // routes.get('/awesome',myController, returnAnotherPerson);
 
-module.exports = routes;
+//Week2
+const express = require('express');
+const router = express.Router();
+
+router.use('/contacts', require('./contacts.js'))
+
+module.exports = router;
 
 
 

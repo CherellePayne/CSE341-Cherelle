@@ -1,0 +1,23 @@
+{
+    "contact": {
+      "firstName": "Ken",
+      "lastName": "Payne",
+      "email": "kenpayne03@gmail.com",
+      "favoriteColor": "Purple",
+      "birthday": "07/04/74"
+    },
+    "contact2": {
+      "firstName": "Summer",
+      "lastName": "Payne",
+      "email": "summer.payne@gmail.com",
+      "favoriteColor": "Blue",
+      "birthday": "04/12/06"
+    },
+    "contact3": {
+      "firstName": "Brady",
+      "lastName": "Payne",
+      "email": "bradypayne@gmail.com",
+      "favoriteColor": "green",
+      "birthday": "03/06/04"
+    }
+  }
