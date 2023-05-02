@@ -17,6 +17,9 @@ const getSingle = async (req, res, next) => {
     .collection('contacts')
     .find({ _id: userId });
   result.toArray().then((lists) => {
+    //practice printing db info
+    // console.log(lists);
+
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists[0]);
   });
