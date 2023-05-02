@@ -36,3 +36,8 @@
 //   }
 // }
 // run().catch(console.dir);
+
+
+
+//copied from .env
+// const uri = "mongodb+srv://Cherelle:rockyranger@cluster0.3ikqihk.mongodb.net/?retryWrites=true&w=majority";

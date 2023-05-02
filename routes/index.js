@@ -1,30 +1,22 @@
 //Week1 Routes
-// const routes = require('express').Router();
+const routes = require('express').Router();
 
-// routes.get('/', (req, res) => {
-//   res.send('Ken Payne');
-// });
+routes.get('/', (req, res) => {
+  res.send('Ken Payne');
+});
+// added this line in week 2
+routes.use('/contacts', require('./contacts.js'))
+module.exports = routes;
 
-// module.exports = routes;
 
 
-//From video week 1
-// const { awesomeFunction, returnAnotherPerson } = require('../controllers');
+// //Week2
+// const express = require('express');
+// const router = express.Router();
 
-// const routes = require('express').Router();
+// router.use('/contacts', require('./contacts.js'))
 
-// comment below out if it doesn't work
-// const myController = require('/Users/kenpayne/Documents/CSE341/CSE341-Cherelle/routes/index.js')
-// routes.get('/', myController, awesomeFunction);
-// routes.get('/awesome',myController, returnAnotherPerson);
-
-//Week2
-const express = require('express');
-const router = express.Router();
-
-router.use('/contacts', require('./contacts.js'))
-
-module.exports = router;
+// module.exports = router;
 
 
 
