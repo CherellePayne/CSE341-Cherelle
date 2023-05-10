@@ -44,8 +44,24 @@ res.status(201).json(response);
 const deleteContact = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
   const response = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);
-  res.status(200).json(response)
+  res.status(200).json(response);
 }
 
+const updateContact = async (req, res, next) => {
+  const userId = new ObjectId(req.params.id);
+  const contact = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
+  };
+  const response = await mongodb.getDb().db().collection('contacts').replaceOne({ _id: userId }, contact);
+// console.log(response);
+  res.setHeader('Content-Type', 'application/json');
+  res.status(204).send();
+};  
+
+
 //this exports the functions outside of the contact.js
-module.exports = { getAll, getSingle, createContact, deleteContact};
+module.exports = { getAll, getSingle, createContact, deleteContact, updateContact };
