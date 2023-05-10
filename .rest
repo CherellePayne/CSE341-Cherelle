@@ -32,7 +32,7 @@ PUT contact PUT http://localhost:8080/contacts/6450ab872867293d3366b9c2 HTTP/1.1
 "firstName":"Sarah", "lastName":"Birch", "email":"test@gmail.com", "favoriteColor":"Green", "birthday":"12/12/20"
 } 
 ### 
-DELETE contact DELETE https://cherelle-341.onrender.com/contacts/6450ab872867293d3366b9c2 HTTP/1.1
+DELETE http://localhost:8080/contacts/645b29bb75a3070d3f059653 HTTP/1.1
 
 // PRODUCTION Deploy 
 ### 

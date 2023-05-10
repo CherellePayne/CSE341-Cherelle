@@ -41,6 +41,11 @@ const response = await mongodb.getDb().db().collection('contacts').insertOne(con
 res.status(201).json(response);
 }
 
+const deleteContact = async (req, res, next) => {
+  const userId = new ObjectId(req.params.id);
+  const response = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);
+  res.status(200).json(response)
+}
 
 //this exports the functions outside of the contact.js
-module.exports = { getAll, getSingle, createContact };
+module.exports = { getAll, getSingle, createContact, deleteContact};

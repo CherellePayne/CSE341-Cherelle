@@ -13,7 +13,7 @@ router.post('/', contactsController.createContact);
 
 // router.put('/:id', contactsController.updateContact);
 
-// router.delete('/:id', contactsController.deleteContact);
+router.delete('/:id', contactsController.deleteContact);
 
 //This exports all the routes from contacts.js (controller)
 module.exports = router;
