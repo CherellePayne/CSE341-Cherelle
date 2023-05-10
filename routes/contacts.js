@@ -9,10 +9,11 @@ router.get('/:id', contactsController.getSingle);
 
 //Week 3
 
-// router.post('/:id', contactsController.createContact);
+router.post('/', contactsController.createContact);
 
 // router.put('/:id', contactsController.updateContact);
 
 // router.delete('/:id', contactsController.deleteContact);
 
+//This exports all the routes from contacts.js (controller)
 module.exports = router;

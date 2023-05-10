@@ -16,4 +16,4 @@ const testVariable = 'awesome!';
 
 // router.use('/contacts', require('./contacts.js'))
 
-// module.exports = router;
+module.exports = routes;
