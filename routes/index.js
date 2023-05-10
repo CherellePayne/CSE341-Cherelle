@@ -5,10 +5,10 @@ routes.get('/', (req, res) => {
   res.send('Ken Payne');
 });
 // added this line in week 2
-routes.use('/contacts', require('./contacts.js'))
+routes.use('/contacts', require('./contacts.js'));
 module.exports = routes;
 
-
+const testVariable = 'awesome!';
 
 // //Week2
 // const express = require('express');
@@ -17,6 +17,3 @@ module.exports = routes;
 // router.use('/contacts', require('./contacts.js'))
 
 // module.exports = router;
-
-
-

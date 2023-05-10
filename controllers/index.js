@@ -1,5 +1,5 @@
 // const awesomeFunction = (reg, res, next) =>{
-    // reg.json('Awesome person');
+// reg.json('Awesome person');
 // };
 
 // const returnAnotherPerson = (reg, res, next) =>{
@@ -9,8 +9,6 @@
 // module.exports = {awesomeFunction, returnAnotherPerson };
 
 // module.exports = {awesomeFunction};mongo --version
-
-
 
 //Not sure where to put this
 // const { MongoClient, ServerApiVersion } = require('mongodb');
@@ -36,8 +34,6 @@
 //   }
 // }
 // run().catch(console.dir);
-
-
 
 //copied from .env
 // const uri = "mongodb+srv://Cherelle:rockyranger@cluster0.3ikqihk.mongodb.net/?retryWrites=true&w=majority";

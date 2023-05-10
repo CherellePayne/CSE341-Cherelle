@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use('/', require('./routes'))
+app.use('/', require('./routes'));
 
 // code is referencing this code in index.js
 // const routes = require('express').Router();
@@ -11,10 +11,10 @@ app.use('/', require('./routes'))
 // });
 
 app.listen(port, () => {
-    console.log(`Running on port ${port}`)
+  console.log(`Running on port ${port}`);
 });
 
-//Idea given in fullstack for query 
+//Idea given in fullstack for query
 // var express = require('express');
 // var app = express();
 
