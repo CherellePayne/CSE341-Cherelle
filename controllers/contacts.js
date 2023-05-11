@@ -43,7 +43,7 @@ res.status(201).json(response);
 
 const deleteContact = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
-  const response = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);
+  const response = await mongodb.getDb().db().collection('contacts').deleteOne({ _id: userId }, true);
   res.status(200).json(response);
 }
 
@@ -58,8 +58,11 @@ const updateContact = async (req, res, next) => {
   };
   const response = await mongodb.getDb().db().collection('contacts').replaceOne({ _id: userId }, contact);
 // console.log(response);
-  res.setHeader('Content-Type', 'application/json');
+if (response.modifiedCount > 0) {
   res.status(204).send();
+} else {
+  res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+}
 };  
 
 
