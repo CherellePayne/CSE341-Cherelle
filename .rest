@@ -11,48 +11,42 @@ GET https://cherelle-341.onrender.com/contacts HTTP/1.1
 GET https://cherelle-341.onrender.com/contacts/6450ab872867293d3366b9c2 HTTP/1.1
 
 //week 3
-
 ### 
 Get  http://localhost:8080/contacts/6450ab872867293d3366b9c2
 
 ### 
 POST http://localhost:8080/contacts HTTP/1.1 
-content-type: application/json
 
+content-type: application/json
 {
-"firstName":"Jenny", "lastName":"Walton", "email":"bjwal@test.com", "favoriteColor":"Jade", "birthday":"08/30/1955"
+"firstName":"Jen", "lastName":"Walton", "email":"bjwal@test.com", "favoriteColor":"Jade", "birthday":"08/30/1955"
 }
 
 ### 
-PUT http://localhost:8080/contacts/645bc4db2b6568d6fb67ea06 HTTP/1.1 
+POST https://cherelle-341.onrender.com/contacts HTTP/1.1 
 
 content-type: application/json
 {
-"firstName":"Sarah", "lastName":"Birch", "email":"test@gmail.com", "favoriteColor":"Green", "birthday":"12/12/20"
+"firstName":"Jeneen", "lastName":"Walton", "email":"bjwal@test.com", "favoriteColor":"Jade", "birthday":"08/30/1955"
+}
+
+
+### 
+PUT http://localhost:8080/contacts/645bc5c085b1263a70bcd5ff HTTP/1.1 
+
+content-type: application/json
+{
+"firstName":"Sarah", "lastName":"Beiber", "email":"test@gmail.com", "favoriteColor":"Green", "birthday":"03/06/80"
+}
+
+### 
+PUT https://cherelle-341.onrender.com/contacts/645bc5c085b1263a70bcd5ff HTTP/1.1 
+
+content-type: application/json
+{
+"firstName":"Sara", "lastName":"Beiber", "email":"test@gmail.com", "favoriteColor":"Blue", "birthday":"03/06/80"
 } 
+
 ### 
 DELETE http://localhost:8080/contacts/645b29bb75a3070d3f059653 HTTP/1.1
 
-// PRODUCTION Deploy 
-### 
-GET https://cherelle-341.onrender.com/contacts/ 
-
-### 
-Get contact by id GET https://cherelle-341.onrender.com/contacts/6450ab872867293d3366b9c2
-
-### 
-Create contact POST https://cherelle-341.onrender.com/contacts/  HTTP/1.1 content-type: application/json
-
-{
-"firstName":"Ashley", "lastName":"Weaver", "email":"aWeaver@test.com", "favoriteColor":"Brown", "birthday":"06/19/2000"
-}
-
-### 
-PUT contact PUT https://cherelle-341.onrender.com/contacts/6450ab872867293d3366b9c2 HTTP/1.1 content-type: application/json
-
-{
-"firstName":"Sarah", "lastName":"Birch", "email":"sarahB@gmail.com", "favoriteColor":"Yellow", "birthday":"06/12/20"
-}
-
-### 
-DELETE contact DELETE https://cherelle-341.onrender.com/contacts/6450ab872867293d3366b9c2 HTTP/1.1
