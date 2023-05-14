@@ -5,7 +5,7 @@
       "description": "Cherelle API",
       "version": "1.0.0"
     },
-    "host": "cse341-instructor.herokuapp.com",
+    "host": "cherelle-341.onrender.com",
     "basePath": "/",
     "schemes": [
       "https"
