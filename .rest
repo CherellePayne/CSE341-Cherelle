@@ -20,7 +20,7 @@ POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-"firstName":"Jen", "lastName":"Walton", "email":"bjwal@test.com", "favoriteColor":"Jade", "birthday":"08/30/1955"
+"firstName":"Jenny", "lastName":"Walton", "email":"bjwal@test.com", "favoriteColor":"Jade", "birthday":"08/30/1955"
 }
 
 ### 
@@ -34,7 +34,7 @@ content-type: application/json
 
 
 ### 
-PUT http://localhost:8080/contacts/645bc5c085b1263a70bcd5ff HTTP/1.1 
+PUT http://localhost:8080/contacts/645c688e0d9238e61f74df2a HTTP/1.1 
 
 content-type: application/json
 
@@ -43,7 +43,7 @@ content-type: application/json
 }
 
 ### 
-PUT https://cherelle-341.onrender.com/contacts/6450ab872867293d3366b9c2 HTTP/1.1 
+PUT https://cherelle-341.onrender.com/contacts/645c688e0d9238e61f74df2a HTTP/1.1 
 
 content-type: application/json
 
@@ -52,7 +52,7 @@ content-type: application/json
 } 
 
 ### 
-DELETE http://localhost:8080/contacts/645c4f1eb4bcb764b8a701a3 HTTP/1.1
+DELETE http://localhost:8080/contacts/645c4eeab4bcb764b8a701a2 HTTP/1.1
 
 ### 
-DELETE http://cherelle-341.onrender.com/contacts/645c4f1eb4bcb764b8a701a3 HTTP/1.1
+DELETE http://cherelle-341.onrender.com/contacts/645c4eeab4bcb764b8a701a2 HTTP/1.1
