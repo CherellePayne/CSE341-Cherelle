@@ -3,14 +3,14 @@ GET http://localhost:8080 HTTP/1.1
 ###
 GET http://localhost:8080/contacts HTTP/1.1
 ####
-GET https://cherelle-341.onrender.com HTTP/1.1
+GET https://cse341-cherelle.onrender.com HTTP/1.1
 
 ###
-GET https://cherelle-341.onrender.com/contacts HTTP/1.1
+GET https://cse341-cherelle.onrender.com/contacts HTTP/1.1
 
 
 ###
-GET https://cherelle-341.onrender.com/contacts/6450ab872867293d3366b9c2 HTTP/1.1
+GET https://cse341-cherelle.onrender.com/contacts/6450ab872867293d3366b9c2 HTTP/1.1
 
 //week 3
 ### 
@@ -26,7 +26,7 @@ content-type: application/json
 }
 
 ### 
-POST https://cherelle-341.onrender.com/contacts HTTP/1.1 
+POST https://cse341-cherelle.onrender.com/contacts HTTP/1.1 
 
 content-type: application/json
 
@@ -45,7 +45,7 @@ content-type: application/json
 }
 
 ### 
-PUT https://cherelle-341.onrender.com/contacts/645c688e0d9238e61f74df2a HTTP/1.1 
+PUT https://cse341-cherelle.onrender.com/contacts/645c688e0d9238e61f74df2a HTTP/1.1 
 
 content-type: application/json
 
