@@ -1,15 +1,8 @@
-//Week1 Routes
-const routes = require('express').Router();
+const express = require('express');
+const router = express.Router();
 
-routes.get('/', (req, res) => {
-  res.send('Ken Payne');
-});
+router.use('/', require('./swagger'));
+router.use('/contacts', require('./contacts'));
 
-routes.use('/', require('./swagger'));
-routes.use('/contacts', require('./contacts.js'));
-
-
-const testVariable = 'awesome!';
-
-module.exports = routes;
+module.exports = router;
 
