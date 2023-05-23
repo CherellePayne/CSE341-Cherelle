@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Cherelle API',
   },
-  host: 'cherelle-341.onrender.com',
+  host: 'cse341-cherelle.onrender.com',
   schemes: ['https'],
 };
 
